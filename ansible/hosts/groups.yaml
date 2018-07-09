@@ -42,7 +42,6 @@ all:
       - gpg
       - htop
       - iftop
-      - iotop
       - jq
       - kubernetes-cli
       - kubernetes-helm
