@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: true
+  roles:
+    - homebrew
+    - npm
+    # - zsh
+    - pip
+    - atom
+    # - mas

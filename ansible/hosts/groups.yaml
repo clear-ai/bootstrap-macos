@@ -1,0 +1,126 @@
+all:
+  vars:
+    npm_packages:
+      - unsplash-wallpaper
+      - yarn
+
+    pip_packages:
+      - awscli
+      - slack-cleaner
+
+    homebrew_taps:
+      - homebrew/cask-fonts
+      - drone/drone
+      - homebrew/cask
+      - jtyr/repo
+
+    homebrew_cask_packages:
+      - atom
+      - docker
+      - firefox
+      - font-bitstreamverasansmono-nerd-font-mono
+      - google-chrome
+      - google-cloud-sdk
+      - google-drive-file-stream    # Requires administrator password
+      - iterm2
+      - java
+      - keybase
+      - microsoft-office
+      - postman
+      - slack
+      - spotify
+      - tunnelblick
+      - visual-studio-code-insiders
+      - yubico-authenticator
+
+    homebrew_packages:
+      - byobu
+      - docker
+      - drone
+      - gbt
+      - go
+      - gpg
+      - htop
+      - iftop
+      - iotop
+      - jq
+      - kubernetes-cli
+      - kubernetes-helm
+      - mas
+      - node
+      - npm
+      - openssl
+      - python
+      - sbt
+      - telnet
+      - terraform
+      - tree
+      - vault
+      - watch
+      - wget
+      - yarn
+      - youtube-dl
+      - zsh
+      - zsh-autosuggestions
+      - zsh-completions
+
+    vscode_packages:
+      - 2gua.rainbow-brackets
+      - aaron-bond.better-comments
+      - christian-kohler.npm-intellisense
+      - christian-kohler.path-intellisense
+      - cmstead.jsrefactor
+      - codezombiech.gitignore
+      - dbaeumer.vscode-eslint
+      - dsznajder.es7-react-js-snippets
+      - eamodio.gitlens
+      - EditorConfig.EditorConfig
+      - eg2.vscode-npm-script
+      - Equinusocio.vsc-material-theme
+      - formulahendry.auto-close-tag
+      - formulahendry.auto-rename-tag
+      - HookyQR.beautify
+      - leveluptutorials.theme-levelup
+      - mikestead.dotenv
+      - mrmlnc.vscode-scss
+      - ms-python.python
+      - ms-vscode.atom-keybindings
+      - ms-vscode.Go
+      - msjsdiag.debugger-for-chrome
+      - OfHumanBondage.react-proptypes-intellisense
+      - PKief.material-icon-theme
+      - sourcegraph.javascript-typescript
+      - steoates.autoimport
+      - wesbos.theme-cobalt2
+      - wix.vscode-import-cost
+
+    atom_packages:
+      - atom-jinja2
+      - base64
+      - busy-signal
+      - color-picker
+      - duplicate-removal
+      - go-plus
+      - intentions
+      - language-docker
+      - language-logstash
+      - language-terraform
+      - linter
+      - linter-js-yaml
+      - linter-jsonlint
+      - linter-terraform-semantics
+      - linter-terraform-syntax
+      - linter-ui-default
+      - php-twig
+      - platformio-ide-terminal
+      - pretty-json
+      - sort-lines
+      - sort-lines
+      - split-diff
+      - teletype
+      - terraform-fmt
+      - todo-show
+
+    mas_packages:
+      - { name: HyperDock, id: 449830122 }
+      - { name: Xcode, id: 497799835 }

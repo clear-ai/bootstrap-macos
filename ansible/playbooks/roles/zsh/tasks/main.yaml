@@ -1,0 +1,15 @@
+---
+- name: install oh-my-zsh
+  shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  become: true
+  become_method: sudo
+  args:
+    creates: ~/.oh-my-zsh
+
+- name: install zsh-completions
+  become: true
+  become_method: sudo
+  file:
+    src: /usr/local/share/zsh-completions
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-completions
+    state: link

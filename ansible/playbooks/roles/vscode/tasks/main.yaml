@@ -1,0 +1,4 @@
+---
+- name: install vscode-insiders-extentions
+  command: code-insiders --install-extension {{ item }}
+  with_items: "{{ vscode_packages }}"

@@ -1,0 +1,10 @@
+---
+- name: upgrade all mas (App Store) packages
+  shell: mas upgrade
+  register: ret
+  changed_when: '"Everything is up-to-date" not in ret.stdout'
+
+- name: install mas (mac store)
+  command: mas install {{ item.id }}
+  with_items: "{{ mas_packages }}"
+  changed_when: '"already installed" not in ret.stdout'

@@ -1,0 +1,28 @@
+---
+- name: install homebrew taps
+  homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ homebrew_taps }}"
+
+- name: upgrade homebrew cask packages
+  homebrew_cask:
+    name: "{{ item }}"
+    state: upgraded
+    update_homebrew: yes
+    upgrade_all: yes
+  with_items: "{{ homebrew_cask_packages }}"
+
+- name: install homebrew cask packages
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    update_homebrew: yes
+  with_items: "{{ homebrew_cask_packages }}"
+
+- name: install homebrew packages
+  homebrew:
+    name: "{{ item }}"
+    state: present
+    update_homebrew: yes
+  with_items: "{{ homebrew_packages }}"
