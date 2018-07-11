@@ -20,7 +20,7 @@ all:
       - firefox
       - font-bitstreamverasansmono-nerd-font-mono
       - google-chrome
-      - google-cloud-sdk
+      # - google-cloud-sdk
       # - google-drive-file-stream    # Requires administrator password
       # - iterm2
       - java
