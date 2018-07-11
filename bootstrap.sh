@@ -38,4 +38,4 @@ brew install ansible
 
 echo "[INFO] Execute ansible playbook"
 cd ansible
-ansible-playbook -v playbooks/playbook.yaml
+ansible-playbook -v playbooks/playbook.yaml &> ~/Desktop/bootstrap1.log
