@@ -23,7 +23,7 @@ all:
       # - google-cloud-sdk
       # - google-drive-file-stream    # Requires administrator password
       # - iterm2
-      - java
+      # - java
       - keybase
       # - microsoft-office
       - postman
