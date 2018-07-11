@@ -22,10 +22,10 @@ all:
       - google-chrome
       - google-cloud-sdk
       - google-drive-file-stream    # Requires administrator password
-      - iterm2
+      # - iterm2
       - java
       - keybase
-      - microsoft-office
+      # - microsoft-office
       - postman
       - slack
       - spotify
