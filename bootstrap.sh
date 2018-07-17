@@ -25,8 +25,18 @@ echo "[INFO] update brew"
 brew update
 if [ $? -ne 0 ]; then
   echo "[INFO] fix brew"
+  # allow admins to manage homebrew's local install directory
+  sudo chgrp -R admin /usr/local
   sudo chmod -R g+w /usr/local
+
+  # allow admins to homebrew's local cache of formulae and source files
+  sudo chgrp -R admin /Library/Caches/Homebrew
   sudo chmod -R g+w /Library/Caches/Homebrew
+
+  # if you are using cask then allow admins to manager cask install too
+  sudo chgrp -R admin /opt/homebrew-cask
+  sudo chmod -R g+w /opt/homebrew-cask
+
   brew update
 else
   echo "[INFO] looks like brew works!"
