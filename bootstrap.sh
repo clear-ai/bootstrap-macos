@@ -48,4 +48,4 @@ brew install ansible
 
 echo "[INFO] Execute ansible playbook"
 cd ansible
-ansible-playbook -vvv playbooks/playbook.yaml
+ansible-playbook playbooks/playbook.yaml
