@@ -17,7 +17,7 @@ all:
     homebrew_cask_packages:
       - atom
       - docker
-      - firefox
+      # - firefox
       - font-bitstreamverasansmono-nerd-font-mono
       - google-chrome
       # - google-cloud-sdk
