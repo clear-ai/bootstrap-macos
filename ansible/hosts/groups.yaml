@@ -10,6 +10,7 @@ all:
 
     homebrew_taps:
       - homebrew/cask-fonts
+      - homebrew/cask-versions
       - drone/drone
       - homebrew/cask
       - jtyr/repo
@@ -23,7 +24,7 @@ all:
       # - google-cloud-sdk
       # - google-drive-file-stream    # Requires administrator password
       # - iterm2
-      - java
+      - java8
       - keybase
       # - microsoft-office
       - postman
