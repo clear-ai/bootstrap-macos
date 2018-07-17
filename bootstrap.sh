@@ -25,8 +25,8 @@ echo "[INFO] update brew"
 brew update
 if [ $? -ne 0 ]; then
   echo "[INFO] fix brew"
-  chmod -R g+w /usr/local
-  chmod -R g+w /Library/Caches/Homebrew
+  sudo chmod -R g+w /usr/local
+  sudo chmod -R g+w /Library/Caches/Homebrew
   brew update
 else
   echo "[INFO] looks like brew works!"
