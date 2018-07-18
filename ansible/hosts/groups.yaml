@@ -35,6 +35,7 @@ all:
       - visual-studio-code-insiders
       - whatsapp
       - yubico-authenticator
+      - zoomus
 
     homebrew_packages:
       - byobu
