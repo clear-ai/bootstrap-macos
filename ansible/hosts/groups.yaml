@@ -11,6 +11,7 @@ all:
     homebrew_taps:
       - homebrew/cask-fonts
       - homebrew/cask-versions
+      - homebrew/cask-drivers
       - drone/drone
       - homebrew/cask
       - jtyr/repo
