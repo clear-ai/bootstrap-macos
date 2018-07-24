@@ -54,6 +54,7 @@ all:
       - npm
       - openssl
       - python
+      - python3
       - sbt
       - telnet
       - terraform
