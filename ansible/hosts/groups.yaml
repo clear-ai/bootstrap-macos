@@ -17,6 +17,7 @@ all:
       - jtyr/repo
 
     homebrew_cask_packages:
+      - anaconda
       - atom
       - docker
       - firefox
