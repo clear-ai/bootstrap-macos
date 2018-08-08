@@ -119,7 +119,6 @@ all:
       - platformio-ide-terminal
       - pretty-json
       - sort-lines
-      - sort-lines
       - split-diff
       - teletype
       - terraform-fmt
