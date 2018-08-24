@@ -28,6 +28,7 @@ all:
       - google-drive-file-stream    # Requires administrator password
       - iterm2
       - java8
+      - jetbrains-toolbox
       - keybase
       - microsoft-office
       - postman
