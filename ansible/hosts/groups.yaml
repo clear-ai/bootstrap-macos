@@ -19,6 +19,7 @@ all:
     homebrew_cask_packages:
       - anaconda
       - atom
+      - avast-security
       - docker
       - firefox
       - font-bitstreamverasansmono-nerd-font-mono
