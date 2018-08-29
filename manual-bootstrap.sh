@@ -19,8 +19,8 @@ if [ $? -ne 0 ]; then
   sudo -H -u $ADMIN_USER bash -c '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null'
   echo "[INFO] fix brew"
   # allow admins to manage homebrew's local install directory
-  chgrp -R admin /usr/local
-  chmod -R g+w /usr/local
+  chgrp -R admin /usr/local/*
+  chmod -R g+w /usr/local/*
 
   # allow admins to homebrew's local cache of formulae and source files
   chgrp -R admin /Library/Caches/Homebrew
