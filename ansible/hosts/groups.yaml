@@ -43,7 +43,7 @@ all:
     homebrew_packages:
       - byobu
       - docker
-      - drone
+      # - drone
       - gbt
       - go
       - gpg
