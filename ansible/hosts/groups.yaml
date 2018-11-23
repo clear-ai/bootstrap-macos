@@ -6,6 +6,8 @@ all:
 
     pip_packages:
       - awscli
+      - aws-google-auth
+      - jupyter
 
     homebrew_taps:
       - homebrew/cask-fonts
