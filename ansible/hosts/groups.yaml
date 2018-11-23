@@ -6,7 +6,6 @@ all:
 
     pip_packages:
       - awscli
-      - slack-cleaner
 
     homebrew_taps:
       - homebrew/cask-fonts
