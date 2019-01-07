@@ -49,3 +49,10 @@ brew install ansible
 echo "[INFO] Execute ansible playbook"
 cd ansible
 ansible-playbook playbooks/playbook.yaml
+
+echo "[INFO] Install go packages"
+echo  export GOPATH=$HOME/go >> ~/.zshrc
+source ~/.zshrc
+chsh -s $(which zsh)
+go get -u github.com/cloudflare/cfssl/cmd/cfssl
+go get -u github.com/cloudflare/cfssl/cmd/cfssljson
