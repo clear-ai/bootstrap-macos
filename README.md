@@ -11,5 +11,3 @@ This repo is public so that it can be easily downloaded to bootstrap a new lapto
 Bootstrap:
 `curl https://raw.githubusercontent.com/clear-ai/bootstrap-macos/master/manual-bootstrap.sh | sudo bash`
 
-Enrollment:
-`https://a.simplemdm.com/e/?c=28089102`
