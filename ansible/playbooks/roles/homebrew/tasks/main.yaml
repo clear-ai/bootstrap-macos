@@ -1,4 +1,34 @@
 ---
+- find:
+    paths: /usr/local
+    file_type: any
+  register: localdir
+
+- name: fix group permissions /usr/local
+  file:
+    path: "{{ item.path }}"
+    group: brew
+    mode: g+w
+    recurse: true
+  with_items: "{{ localdir.files }}"
+  become: true
+
+- name: fix group permissions /Library/Caches/Homebrew
+  file:
+    path: /Library/Caches/Homebrew
+    group: brew
+    mode: g+w
+    recurse: true
+  become: true
+
+- name: fix group permissions /opt/homebrew-cask
+  file:
+    path: /opt/homebrew-cask
+    group: brew
+    mode: g+w
+    recurse: true
+  become: true
+
 - name: install homebrew taps
   homebrew_tap:
     name: "{{ item }}"
@@ -22,7 +52,6 @@
 
 - name: install homebrew packages
   homebrew:
-    name: "{{ item }}"
+    name: "{{ homebrew_packages }}"
     state: present
     update_homebrew: yes
-  with_items: "{{ homebrew_packages }}"
