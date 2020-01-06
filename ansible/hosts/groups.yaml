@@ -24,7 +24,7 @@ all:
       - google-cloud-sdk
       - google-drive-file-stream    # Requires administrator password
       - iterm2
-      - java8
+      - adoptopenjdk8
       - jetbrains-toolbox
       - keybase
       - microsoft-office
@@ -36,6 +36,16 @@ all:
       - whatsapp
       - yubico-authenticator
       - zoomus
+      - 1password
+      - font-bitstreamverasansmono-nerd-font
+      - alfred
+      - font-hack-nerd-font
+      - keepingyouawake
+      - virtualbox
+      - disk-inventory-x
+      - google-drive-file-stream
+      - pref-setter
+      - java
     homebrew_packages:
       - byobu
       - drone
