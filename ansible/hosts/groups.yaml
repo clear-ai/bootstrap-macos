@@ -61,7 +61,6 @@ all:
       - node
       - npm
       - openssl
-      - python
       - python3
       - sbt
       - telnet
