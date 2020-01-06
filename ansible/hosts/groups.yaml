@@ -2,13 +2,10 @@ all:
   vars:
     npm_packages:
       - unsplash-wallpaper
-      - yarn
-
     pip_packages:
       - awscli
       - aws-google-auth
       - jupyter
-
     homebrew_taps:
       - homebrew/cask-fonts
       - homebrew/cask-versions
@@ -16,7 +13,6 @@ all:
       - drone/drone
       - homebrew/cask
       - jtyr/repo
-
     homebrew_cask_packages:
       - anaconda
       - atom
@@ -40,11 +36,9 @@ all:
       - whatsapp
       - yubico-authenticator
       - zoomus
-
     homebrew_packages:
       - byobu
-      - docker
-      # - drone
+      - drone
       - gbt
       - go
       - gpg
@@ -71,7 +65,6 @@ all:
       - zsh
       - zsh-autosuggestions
       - zsh-completions
-
     vscode_packages:
       - 2gua.rainbow-brackets
       - aaron-bond.better-comments
@@ -101,14 +94,17 @@ all:
       - steoates.autoimport
       - wesbos.theme-cobalt2
       - wix.vscode-import-cost
-
     atom_packages:
+      - atom-ide-ui
       - atom-jinja2
+      - atom-yamljson
       - base64
       - busy-signal
       - color-picker
       - duplicate-removal
+      - go-debug
       - go-plus
+      - go-signature-statusbar
       - intentions
       - language-docker
       - language-logstash
@@ -117,6 +113,7 @@ all:
       - linter-js-yaml
       - linter-jsonlint
       - linter-terraform-semantics
+      - react
       - linter-terraform-syntax
       - linter-ui-default
       - php-twig
@@ -127,7 +124,7 @@ all:
       - teletype
       - terraform-fmt
       - todo-show
-
+      - xml-formatter
     mas_packages:
       - { name: HyperDock, id: 449830122 }
       - { name: Xcode, id: 497799835 }
