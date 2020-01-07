@@ -4,6 +4,19 @@
     file_type: any
   register: localdir
 
+- name: ensure brew group
+  group:
+    name: brew
+    state: present
+  become: true
+
+- name: add admin to brew group
+  user:
+    name: admin
+    groups: brew
+    append: yes
+  become: true
+
 - name: fix group permissions /usr/local
   file:
     path: "{{ item.path }}"

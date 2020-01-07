@@ -1,6 +1,7 @@
 #!/bin/sh
 
-ADMIN_USER="admin"
+set -e
+
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 
 echo "[INFO] checking if brew is installed"
@@ -26,8 +27,8 @@ brew update
 if [ $? -ne 0 ]; then
   echo "[INFO] fix brew"
   # allow admins to manage homebrew's local install directory
-  chgrp -R brew $(brew --prefix)/*
-  chmod -R g+w $(brew --prefix)/*
+  sudo chgrp -R brew $(brew --prefix)/*
+  sudo chmod -R g+w $(brew --prefix)/*
 
   brew update
 else
