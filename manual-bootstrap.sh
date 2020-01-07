@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 ADMIN_USER="admin"
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 
@@ -13,7 +15,6 @@ else
 fi
 
 echo "[INFO] Clone bootstrap repo"
-git clone https://github.com/clear-ai/bootstrap-macos.git
+sudo -H -n -u $ADMIN_USER bash -c 'cd ~ && rm -rf bootstrap-macos; git clone https://github.com/clear-ai/bootstrap-macos.git'
 
-cd bootstrap-macos
-sudo -H -n -u $ADMIN_USER bash -c './bootstrap.sh'
+sudo -H -n -u $ADMIN_USER bash -c '~/bootstrap-macos/bootstrap.sh'
