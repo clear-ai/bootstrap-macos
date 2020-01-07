@@ -16,5 +16,5 @@ fi
 
 echo "[INFO] Clone bootstrap repo"
 sudo -H -n -u $ADMIN_USER bash -c 'cd ~ && rm -rf bootstrap-macos; git clone https://github.com/clear-ai/bootstrap-macos.git'
-
-sudo -H -n -u $ADMIN_USER bash -c '~/bootstrap-macos/bootstrap.sh'
+cd ~/bootstrap-macos
+sudo -H -n -u $ADMIN_USER bash -c 'bootstrap.sh'
